@@ -27,6 +27,11 @@ header {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  header {
+    padding: 3rem 1rem;
+  }
+}
 header h1 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -55,6 +60,11 @@ button {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+}
+@media (max-width: 767px) {
+  .new-task-input {
+    font-size: 1rem;
+  }
 }
 .new-task-input::placeholder {
   color: var(--grey);
@@ -89,6 +99,11 @@ main {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  main {
+    padding: 2rem 0;
+  }
 }
 .task-list {
   padding: 1rem;
@@ -141,6 +156,11 @@ main {
   -o-transition: 0.3s;
   width: calc(100% - 100px);
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  .new-task .content input {
+    width: 100%;
+  }
 }
 .new-task .content input:not(:read-only) {
   color: var(--pinK);
